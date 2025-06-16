@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1737601983 source:c:\users\matthew\desktop\subjects\comp programming\college++\projects\personal finance monitoring program\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<iomanip>
+
+1737603139 source:c:\users\matthew\desktop\subjects\comp programming\college++\finished programs\personal finance monitoring program\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<iomanip>
+
+1737603139 source:c:\users\matthew\desktop\subjects\comp_programming\college++\finished programs\1st sem projects\personal finance monitoring program\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<iomanip>
+
