@@ -1,0 +1,40 @@
+-------------------------------------------
+General Purpose Finance Monitoring System
+(Personal Finance Monitoring Program)
+Version: 1.11
+
+Project created by: Matthew Gonzales
+For subject Computer Programming 2
+-------------------------------------------
+Version History:
+
+> Version 1.0: Personal Finance Monitoring Program
+  Documentation: https://docs.google.com/document/d/14pXGOEnThiYFGvqSLLPB0UV9RdEWxkR-/edit?usp=sharing&ouid=103368984060361228294&rtpof=true&sd=true
+
+> Version 1.11: GENFINAGER - General-purpose Finance Monitoring Program
+  Project Proposal:
+  UPDATE LOG:
+    * More options in list editor
+    * More Lists :D
+    * You can have accounts
+    * External List access
+    * Restructured Data Variables and Functions
+
+    * SETTINGS:
+        - Added List and element size editor
+        - Added List and element exclusions
+        - Change password and display name (you cannot change your username)
+
+    * LIST AND ELEMENTS:
+        - Print List sa .txt file
+        - List export and import via file
+        - Search and sorting elements and list (list search is for whitelist player access)
+        - Whitelist users
+        - Loan values (borrow and pay)
+        - Subscript Lock
+
+    * ACCOUNT:
+        - Save-able data into files
+        - Automatic saving of account data
+
+-------------------------------------------
