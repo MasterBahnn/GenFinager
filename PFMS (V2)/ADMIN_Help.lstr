@@ -1,0 +1,310 @@
+1
+-------------------------- INTRODUCTION --------------------------
+
+Welcome to General Purpose Finance Monitoring Program - or GENFINAGER for short;
+GENFINAGER shorted as "General Finance Manager".
+
+The purpose of the application is to monitor daily expenditures and allowances, deposits
+and withdrawals from banks, compute its actual spendings, savings, and credits, time of
+activity to avoid confusion, and control lists of lists for flexibility and accessibility. It can
+give you time to reflect on how much you withdraw the allowances daily, to estimate the
+spendings, allowances and credits to use to do something with the values in the future, to
+save money from unwanted spendings and activities that can lead to missing allowances
+and miscalculations, and to be aware of payments and bills that needs to paid as soon as
+possible (especially credits).
+
+The application help tab will cover through:
+* List Handling
+    - Creating new lists
+    - Renaming lists
+    - Deleting lists
+* List Editor
+    - Creating, Editing and Deleting Elements
+    - Sort and Searching values
+    - Print as .txt file
+* List Import/Export
+    - Export list file
+    - Import list file
+* Whitelisting
+    - Whitelist users
+    - Whitelist access
+    - Limitations
+* Settings
+    - Currency editor and Precision Point Editor
+    - List and element size editor
+    - List and element exclusions
+* Account handling
+    - Creating account
+    - Changing display name and passkey
+    - Deleting an account
+
+And other things you should know about using this program.
+
+Thank you for reading and hope for the best!
+
+ENDOFLINE
+2
+-------------------------- LIST HANDLING --------------------------
+
+CREATING NEW LIST:
+* To create a list, enter "a: Create new list".
+* Then There were two options: "1 > New list of element" and "2: Import existing element".
+* Enter 1 to create new lists of elements then name it what you like.
+* Conditions on list naming:
+    - List name should be distinct form other lists.
+    - List name should at least 4 to 30 characters only.
+
+* The "2: Import existing element" will be covered in a seperate topic (LIST IMPORT/EXPORT);
+
+ACCESS LIST:
+* To access a list, click the list position you want to access.
+* There were four options: The last one is to go back to menu.
+    - Access List.
+    - Rename List Name.
+    - Delete List.
+    - Whitelist Access.
+* Entering on access list send you to the list editor.
+* Entering on renaming list name renames your list name (Same Condition applies).
+* Entering on delete lists deletes the you you are accessing, and go back to the menu.
+
+* Whitelist access, will be covered in a seperate topic (WHITELISTING).
+
+ENDOFLINE
+3
+-------------------------- LIST EDITOR --------------------------
+
+THIS IS WHERE YOU GO WHEN ACCESSING A LIST EDITOR:
+- - - - - - - - - - - - - Sample Visualization of Program - - - - - - - - - - -
+
+<< (10) Exit List Editor
+------------------------------------------------------------
+(5) Sort Element           (6) Search Element      (7) Move Element
+(8) Print as .txt file     (9) Export List
+------------------------ List Editor ----------------------
+List Name: Computer Equipment Fundings
+Updated: 7/2/2025 1:23
+Whitelisted users: AicelMayamaya, MariaRacal, NULL
+
+     ----- Expenditure and Income Records -----
+1) 7/1/2025 23:14 |  income_type                | Allowance: EURO2000.00
+2) 7/1/2025 23:16 |  expense_type               | Monitor: EURO300.00
+3) 7/2/2025 0:8 |  expense_type         | Keyboard: EURO200.00
+
+------------------------------------------------------------
+ ---- Computations: -----
+Expenses: EURO500.00   Loans: EURO0.00   Savings: EURO0.00
+Allowance: EURO1500.00
+- - Condition Counter - -
+EX: 2           IN: 1           (C)BR: 0
+DP: 0           WD: 0           (C)PL: 0
+
+
+----------------------- List Input ------------------------
+1: Create new element               2: Edit specific element
+3: Delete specific element          4: Delete all elements
+------------------------------------------------------------
+Enter only numbers.....
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+* The List Editor Display the list of elements, as well as computation and information on the said list.
+* It also display the inputs on how you handle the elements in the editor.
+* To create a new element (Press 1)
+    > First you choose what value type you want.
+        - Expense type: adds expenses, deducts allowance (cannot add if the value exceeds the remaining allowance)
+        - Income type: adds allowance;
+        - Savings Deposit: deposits allowance to savings (cannot add if the value exceeds the remaining allowance)
+        - Savings Withdraw: withdraws savings to add up allowance (cannot add if the value exceeds the remaining savings balance)
+        - Borrow loan: borrows loan to add up to savings, but it also adds up loan value depending on return value or credit percentage
+            = The loan value computes by: percentage or return value.
+            = choosing the percentage enters the loan interest percentage, computes return value after
+            = choosing the return value enters you the return value when paying back, computes interest percentage after
+        - Pay loan: pays loan and deducts allowance (cannot add if the value exceeds the remaining allowance)
+    > Then write the name of the element and its price:
+        - Ex1: expense type - Motherboards: EURO300
+        - Ex2: borrow loan - emergency loan: EURO200.00 (20.00%, RV: EURO240.00)
+    > If there no any miscalculations occured, the elements you created will add up.
+
+* To edit a specific element (Press 2)
+    > First you choose what element number you want to edit.
+    > In this case: 2) 7/1/2025 23:16 |  expense_type               | Monitor: EURO300.00
+    > Then the element editor display options on how you manipulate:
+        1: [x] Subscript lock - locks element from moving/sorting
+        2: Value Conditions  - edits value conditions
+        3: Element Name - edits element name
+        4: Element Value - edits element value
+        10: Exit element editor - exits element editor
+
+* To delete a specific element (Press 3)
+    > First you choose what element number you want to delete.
+    > In this case: 3) 7/2/2025 0:8 |  expense_type         | Keyboard: EURO200.00
+    > After deleting a specific element, the deleted element will not be displayed in the list editor
+    > When warning occurs, you should add the value and move it on a specific position
+
+* To delete all elements (Press 4)
+    > The program will delete all elements automatically
+
+* To sort all elements (Press 5)
+    > These are the element sort modes in list editor:
+        1: Date - sorts by date
+        2: Time - sorts by time
+        3: Name - sorts by name
+        4: Value - sorts by value
+        5: Reverts to original position - uses position number to sort
+        6: Go back to list editor
+    > Entering these numbers (except 6) will sort out the elements
+
+* To search an element (Press 6)
+    > Enter the value you want to search (any element values).
+    > The result shows in first instance of target found.
+
+* To move an element (Press 7)
+    > Enter the element number you want to move.
+    > Then, enter a element position you want the element to be moved.
+    > The result is the element is moved from the previous position to a new one.
+        - Before: 1) 7/1/2025 23:14 |  income_type                | Allowance: EURO2000.00
+        - After:  3) 7/1/2025 23:14 |  income_type                | Allowance: EURO2000.00
+
+* To print and save list as .txt file (Press 8)
+    > It saved as file named by list name with filetype of ".txt".
+
+ENDOFLINE
+4
+----------------------- LIST IMPORT/EXPORT --------------------------
+
+EXPORT LIST:
+* To export any list, access any existing list and went to list editor, and press 8 to export file.
+* The export file generated is named by list name with filetype of ".lstll".
+
+IMPORT LIST:
+* To import existing list, go to create a new list, and enter "2: Import existing element".
+* Enter the name excluding the said filetype to import a list;
+* NOTE: Upon importing a file, the imported file is deleted
+    > make sure to have a copy of the list file to avoid loss of list file
+    > if not, you can export the imported file to recover
+    > the imported list indicates a name with "(IM)" on it
+
+
+ENDOFLINE
+5
+-------------------------- WHITELISTING --------------------------
+
+WHITELISTING USERS:
+* To whitelist users, access any existing list and enter the "Whitelist user".
+* To whitelist a user (Press a).
+    > Enter the existing account username you want to whitelist.
+* To remove all users (Press b).
+* Enter the position number of username to manipulate
+    > There are three options to manipulate:
+        a: Replace user - replace user with another existing account username (cannot be same)
+        b: Remove user - removes user from whitelist
+        c: Go back - go back to whitelist editor
+* To save changes and go back to menu (Press c).
+
+ACCESS LIST AS WHITELISTED USER:
+* Go to "Access List from other accounts" to access list externally
+* Enter the username of the list you want to access.
+* Then, enter the list name you want to access.
+    > If the list is found but not whitelisted, you cannot access a list.
+    > If the list is not found, check the characters; or enter a different account and list name.
+    > If the list is found and whitelisted, you can edit the list.
+
+LIMITATIONS:
+* Whitelisted users cannot change the settings on the account you are accessing into.
+    > Their current settings is applied until you exit their list.
+* They cannot whitelist other players.
+* They cannot delete, nor rename a list.
+* They can save file as ".txt" or export file.
+
+
+ENDOFLINE
+6
+-------------------------- SETTINGS --------------------------
+
+* Enter the settings to go the settings tab.
+* The setting display account information and options to modify.
+
+* These are the options:
+    > Value visuals:
+        1 > Precision Editor - adjusts precision point.
+        2 > Currency Editor - modify currency sign.
+
+    > List and Element manipulator:
+        3 > List size Editor - adjusts list size
+        4 > Element size Editor - adjust element size
+            - NOTE: Be mindful of list/elements that reached within the limit of your preferences
+            - NOTE: The excess list/elements taht reached the limit will be deleted.
+
+        5 > Element exclusion modifier - modify list and element modifier
+            = The exclusion are the following:
+                1: Element date - hides element date.
+                2: Element time - hides element time.
+                3: Element name - hides element name.
+                4: List credit values - hides credit values.
+                    - Excluding credit values hides the option of credit values (borrow_loan/pay_loan)
+                    - It also hides list with credit values.
+                5: List Date and time - hides list date and time.
+                6: Condition counter - hides condition counter.
+
+    6 > Reset changes to default - resets the changes to default
+        - NOTE: Also be mindful of affected list and elements.
+
+    > Account Handling: (will be covered more in "ACCOUNT HANDLING")
+        7 > Change display name - changes display name
+        8 > Change password - changes password
+        9 > Delete account - delete account
+
+    10 > Exit Settings - Exits settings, save setting data, and go to menu
+
+ENDOFLINE
+7
+------------------------ ACCOUNT HANDLING --------------------------
+
+The allowed characters are the following:
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_@$?!
+
+CONDITIONS:
+* Username:
+    - Must be at least 8 characters and limited to 20 characters
+    - Do not use special characters except for these: _ @ % ? ! (Followed from allowed characters)
+    - Do not have spaces
+* Password:
+    - Must be at least 8 and limited to 100 characters
+    - Do not use special characters except for these: _ @ % ? ! (Followed from allowed characters)
+    - Do not have spaces
+* Display name:
+    - Must be at least 3 characters and limited to 30 characters
+    - Allowed to have spaces
+    - Allowed to have special characters (Excluded from checking the allowed characters)
+
+ACCOUNT HANDLING:
+* After you creating an account, you cannot able to change the username
+    > Can be modified outside the program (Make sure the username and filename is matched)
+* The account is saved by username along with the filetype of ".lstacc";
+
+* You can modify the display name and password in settings:
+    > Change display name - changes display name, following the conditions
+    > Change password - changes account password, following the conditions
+        - The program must authenticate the user before changing it
+        - Failed to authenticate resulting of "forcefully" logging out for security purposes
+
+* You can delete the account in settings.
+    > Deleting the account deletes the account file permanently, and logging out from program.
+    > Be mindful of the lists and elements saved from the account file.
+    > Export the file and/or save as ".txt" file before proceeding if necessary.
+
+ENDOFLINE
+8
+-------------------------- OTHER INFO --------------------------
+
+-   DO NOT DELETE OR MODIFY ANY ACCOUNT/LIST FILES CONTAINING IN THE FOLDER WHERE THE PROGRAM RUNS
+    WITHOUT UNDERSTANDING THE ORDER OF HOW THE PROGRAM READS AND WRITES THE ACCOUNT FILES
+-   DOING SO WILL RESULT OF THE DATA  BECOMING CORRUPT AND/OR UNUSABLE
+-   YOU SHOULD NOT DELETE THE FILES WITH FILETYPE OF ".lstr" since its part of program files
+-   You can delete ".lstacc" files outside the running program.
+-   The program can save your data if the prodecures and processes from inputs are done properly
+-   You cannot exit via closing the window since it can cause memory leaks and account data cannot been saved properly
+
+Thats all thank you :)
+
+ENDOFLINE
